@@ -17,8 +17,6 @@ The pipeline is built around two swappable components:
 - **Embedding Manager** — abstracts the embedding model, so swapping Sentence-Transformers for another model doesn't touch the rest of the pipeline
 - **Vector Store Manager** — abstracts the vector database, so ChromaDB could be swapped for FAISS/Pinecone/etc. without changing retrieval logic
 
-This modular design keeps query latency under 200ms even on document corpora exceeding 1,000 pages.
+This modular design means swapping embedding models or vector databases doesn't require touching the retrieval logic.
 
-## Stack
-
-LangChain · Sentence-Transformers · ChromaDB · PyMuPDF · Python
+> **Note on scale:** developed and tested locally against a small corpus (3 PDFs, under 50 pages total). Latency/throughput at larger scale (1,000+ pages) hasn't been benchmarked yet — that's a natural next step for this project.
