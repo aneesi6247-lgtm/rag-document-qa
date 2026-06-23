@@ -10,7 +10,7 @@ A retrieval-augmented generation (RAG) pipeline for question answering over PDF 
 4. **Retrieval** — Queries are embedded and matched via top-k cosine similarity search, with a configurable score threshold to filter weak matches
 5. **Generation** — Retrieved chunks are passed as context to an LLM to produce a grounded answer
 
-## Architecture
+## Architecture 
 
 The pipeline is built around two swappable components:
 
