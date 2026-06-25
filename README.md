@@ -20,3 +20,4 @@ The pipeline is built around two swappable components:
 This modular design means swapping embedding models or vector databases doesn't require touching the retrieval logic.
 
 > **Note on scale:** developed and tested locally against a small corpus (3 PDFs, under 50 pages total). Latency/throughput at larger scale (1,000+ pages) hasn't been benchmarked yet — that's a natural next step for this project.
+ 
